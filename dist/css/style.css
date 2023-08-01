@@ -208,7 +208,7 @@ input::placeholder {
   padding: 20px;
   width: 100%;
   max-width: 753px;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 .form input {
@@ -434,7 +434,7 @@ input::placeholder {
 
 .copyright {
   position: relative;
-  top: -215px;
+  margin-top: -215px;
   left: 0;
   z-index: -1;
 }
@@ -631,6 +631,10 @@ input::placeholder {
     padding-top: 100px;
     margin-bottom: 50px;
   }
+
+  .features .item {
+    margin: 15px;
+  }
 }
 
 @media (max-width: 798px) {
@@ -662,7 +666,7 @@ input::placeholder {
 
   .copyright {
     z-index: 1;
-    top: unset;
+    margin-top: unset;
   }
 
   .copyright .image {
