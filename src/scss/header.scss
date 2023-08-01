@@ -1,0 +1,22 @@
+.header {
+  padding: 10px;
+  img {
+    max-width: 520px;
+    width: 100%;
+  }
+  a {
+    color: $color-first;
+    font-size: 25px;
+    line-height: 34px;
+    transition: 0.3s ease all;
+
+    &:hover {
+      color: $color-secondary;
+      transition: 0.3s ease all;
+    }
+  }
+}
+
+.burger-menu {
+  display: none;
+}

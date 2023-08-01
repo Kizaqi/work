@@ -1,0 +1,83 @@
+.title {
+  &.title-h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    line-height: 60px;
+  }
+  color: $color-first;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 0.7;
+  &.title-bottom {
+    position: relative;
+    &::before {
+      content: '';
+      width: 100px;
+      height: 7px;
+      top: 50px;
+      background-color: $color-secondary;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      background-color: $color-secondary;
+    }
+  }
+  &.title-36 {
+    font-size: 36px;
+    font-weight: 500;
+    color: $color-secondary;
+  }
+}
+.line {
+  position: relative;
+  bottom: -23px;
+  width: 280px;
+  height: 1px;
+  background-color: #cacaca;
+  margin: 0 auto;
+  &::before {
+    content: '';
+    width: 100px;
+    height: 7px;
+    margin: 0 90px;
+    position: absolute;
+    top: -3px;
+    background-color: $color-secondary;
+  }
+}
+.subtitle {
+  p {
+    max-width: 477px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: white;
+    line-height: 28px;
+  }
+}
+
+.item {
+  max-width: 370px;
+  width: 100%;
+}
+.box-shadow {
+  padding: 50px 24px 51px 26px;
+  box-shadow: 0 0 10px 0 rgba(64, 199, 255, 0.32);
+  background: white;
+}
+input {
+  &::placeholder {
+    color: #bdbdbd !important;
+  }
+}
+.btn {
+  background: $color-secondary;
+  color: white;
+  font-size: 18px;
+  transition: ease 0.3s all;
+  &:hover {
+    color: $color-secondary;
+    background: white;
+    transition: ease 0.3s all;
+  }
+}

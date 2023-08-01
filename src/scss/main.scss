@@ -1,0 +1,43 @@
+.main {
+  padding-top: 101px;
+  background: url(../img/main-bg.webp) no-repeat;
+  min-height: 842px;
+  width: 100%;
+  transform: t;
+  background-size: cover;
+  background-position: center;
+
+  .item {
+    h2 {
+      font-size: 35.5px;
+      font-weight: 900;
+      line-height: 45px;
+      color: $color-secondary;
+    }
+    h4 {
+      font-size: 22px;
+      color: $color-secondary;
+      font-weight: bold;
+      margin: 5px -15px;
+    }
+    p {
+      color: #898989;
+    }
+  }
+
+  .video-container {
+    padding-top: 23px;
+    max-width: 912px;
+    height: 467px;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      padding: 0 15px;
+      margin-top: 50px;
+    }
+  }
+}

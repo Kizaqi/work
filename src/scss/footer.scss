@@ -1,0 +1,17 @@
+.copyright {
+  position: relative;
+  top: -215px;
+  left: 0;
+  z-index: -1;
+  .image {
+    width: 100%;
+    max-width: 958px;
+  }
+  .bg {
+    background-color: #1e1e1e;
+    color: #bdbdbd;
+    position: absolute;
+    bottom: -66px;
+    z-index: -2;
+  }
+}
