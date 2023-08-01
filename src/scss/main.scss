@@ -1,11 +1,12 @@
 .main {
   padding-top: 101px;
+  margin-top: 100px;
   background: url(../img/main-bg.webp) no-repeat;
   min-height: 842px;
   width: 100%;
-  transform: t;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 
   .item {
     h2 {

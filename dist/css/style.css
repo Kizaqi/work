@@ -101,7 +101,7 @@ h6 {
   color: #333333;
   font-size: 40px;
   font-weight: bold;
-  line-height: 0.7;
+  line-height: 28px;
 }
 
 .title.title-h1 {
@@ -111,21 +111,12 @@ h6 {
   line-height: 60px;
 }
 
-.title.title-bottom {
-  position: relative;
-}
-
-.title.title-bottom::before {
+.title.title-bottom::after {
   content: "";
+  display: block;
+  margin: 20px auto;
   width: 100px;
   height: 7px;
-  top: 50px;
-  background-color: #f26522;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  position: absolute;
   background-color: #f26522;
 }
 
@@ -235,17 +226,6 @@ input::placeholder {
   margin: 0 auto;
 }
 
-title {
-  color: #333333;
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 0.7;
-}
-
-title.title-f10 {
-  font-size: 10px;
-}
-
 .header {
   padding: 10px;
 }
@@ -282,6 +262,7 @@ title.title-f10 {
   height: 100%;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .hero__content {
@@ -296,6 +277,7 @@ title.title-f10 {
 
 .features {
   padding-top: 101px;
+  overflow: hidden;
 }
 
 .features .content {
@@ -318,14 +300,13 @@ title.title-f10 {
 
 .main {
   padding-top: 101px;
+  margin-top: 100px;
   background: url(../img/main-bg.webp) no-repeat;
   min-height: 842px;
   width: 100%;
-  -webkit-transform: t;
-      -ms-transform: t;
-          transform: t;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .main .item h2 {
@@ -365,6 +346,7 @@ title.title-f10 {
 .housecard {
   padding-top: 182px;
   margin-bottom: 150px;
+  overflow: hidden;
 }
 
 .housecard__card {
@@ -408,6 +390,7 @@ title.title-f10 {
   background-size: cover;
   background-position: center;
   max-height: 600px;
+  overflow: hidden;
 }
 
 .subscribe__content {
@@ -427,6 +410,7 @@ title.title-f10 {
 .contact {
   padding-top: 100px;
   padding-bottom: 100px;
+  overflow: hidden;
 }
 
 .contact p {
@@ -650,6 +634,10 @@ title.title-f10 {
 }
 
 @media (max-width: 798px) {
+  .header {
+    max-width: 320px;
+  }
+
   .housecard .opacity {
     display: none;
   }
@@ -658,6 +646,18 @@ title.title-f10 {
 @media (max-width: 576px) {
   .header .burger-menu_nav {
     max-width: unset;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .title.title-h1 {
+    font-size: 35px;
+  }
+
+  .title.title-36 {
+    font-size: 30px;
   }
 
   .copyright {

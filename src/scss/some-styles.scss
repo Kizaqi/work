@@ -8,18 +8,14 @@
   color: $color-first;
   font-size: 40px;
   font-weight: bold;
-  line-height: 0.7;
+  line-height: 28px;
   &.title-bottom {
-    position: relative;
-    &::before {
+    &::after {
       content: '';
+      display: block;
+      margin: 20px auto;
       width: 100px;
       height: 7px;
-      top: 50px;
-      background-color: $color-secondary;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      position: absolute;
       background-color: $color-secondary;
     }
   }
